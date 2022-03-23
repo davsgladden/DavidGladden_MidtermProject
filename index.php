@@ -28,4 +28,5 @@ if ($action == 'list_vehicles') {
 	$classes = get_classes();
 	include('view/vehicle_list.php');
 }
+
 ?>
