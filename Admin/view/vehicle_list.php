@@ -5,7 +5,7 @@
     <section>
         <form name="myform" action="index.php" method="post">
             <select name="makes" id="makes">
-                <option value=".?make_ID=-1">View All Makes</option>
+                <option value="?make_ID=-1">View All Makes</option>
                 <?php foreach ($makes as $make_items) : ?>
                     <option value="?make_ID=<?php echo $make_items['ID']; ?>"
                         <?php if($make_items['ID'] == $make_ID) { ?> selected <?php } ?>> 
