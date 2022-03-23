@@ -4,7 +4,7 @@
     $password = 'x98fnb2jyqm2y8la';
 
     try {
-        $db = new PDO($dsn, $username);//, $password);
+        $db = new PDO($dsn, $username, $password);
     } catch (PDOException $e) {
         $error_message = $e->getMessage();
         include('view/error.php');
